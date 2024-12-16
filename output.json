@@ -1,0 +1,571 @@
+[
+  {
+    "name": "Агупова Наталья Андреевна",
+    "task1": {
+      "url": "https://github.com/Nataliiyaa/SIACOD_task1.git",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/Nataliiyaa/SIACOD_task4.git",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/Nataliiyaa/SIACOD_task3.git",
+      "valid": true,
+      "reason": null
+    },
+    "task5": {
+      "url": "https://github.com/Nataliiyaa/SIACOD_task5.git",
+      "valid": true,
+      "reason": null
+    },
+    "task6": {
+      "url": "https://github.com/Nataliiyaa/SIACOD_task6.git",
+      "valid": false,
+      "reason": "Пустой репозиторий"
+    },
+    "task2": {
+      "url": "https://github.com/Nataliiyaa/SIACOD_task2.git",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Далецкий Денис",
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task5": {
+      "url": "https://github.com/D3N1S10/SIAKOD_task_5",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/D3N1S10/SIAKOD_task_4",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/D3N1S10/SIAKOD_task_1",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/D3N1S10/SIAKOD_task_2",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/D3N1S10/SIAKOD_task_3",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Духанина Диана",
+    "task3": {
+      "url": "https://github.com/DDukhanina/SiACOD",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/DDukhanina/SiACOD",
+      "valid": true,
+      "reason": null
+    },
+    "task5": {
+      "url": "https://github.com/DDukhanina/SiACOD",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/DDukhanina/SiACOD",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/DDukhanina/SiACOD",
+      "valid": true,
+      "reason": null
+    },
+    "task6": {
+      "url": "https://github.com/DDukhanina/SiACOD",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Жидкова Ирина Владимировна ",
+    "task5": {
+      "url": "https://github.com/iireennna/Task5_N7",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/iireennna/Task1_N7",
+      "valid": true,
+      "reason": null
+    },
+    "task6": {
+      "url": "https://github.com/iireennna/Task6_N7",
+      "valid": false,
+      "reason": "Пустой репозиторий"
+    },
+    "task3": {
+      "url": "https://github.com/iireennna/Task3_N3",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/iireennna/Task4_N7",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/iireennna/Task2_N7",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Жукова Марина Анатольевна",
+    "task4": {
+      "url": "https://github.com/Stepassshhhka/Siakod4.git",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/Stepassshhhka/Siakod3.git",
+      "valid": true,
+      "reason": null
+    },
+    "task6": {
+      "url": "https://github.com/Stepassshhhka/Siakod6.git",
+      "valid": false,
+      "reason": "Пустой репозиторий"
+    },
+    "task2": {
+      "url": "https://github.com/Stepassshhhka/Siakod2.git",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/Stepassshhhka/Siakod1.git",
+      "valid": false,
+      "reason": "Пустой репозиторий"
+    },
+    "task5": {
+      "url": "https://github.com/Stepassshhhka/Siakod5.git",
+      "valid": false,
+      "reason": "Пустой репозиторий"
+    }
+  },
+  {
+    "name": "Калугина Анастасия Владимировна",
+    "task1": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task2": {
+      "url": "https://github.com/kaluginaaa-n/siacodtask2",
+      "valid": true,
+      "reason": null
+    },
+    "task5": {
+      "url": "https://github.com/kaluginaaa-n/siacod_task5",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/kaluginaaa-n/siacod_task4",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/kaluginaaa-n/siacod_task3",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Карасев Артем Евгеньевич",
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task1": {
+      "url": "- сгорел",
+      "valid": false,
+      "reason": "Не ссылка"
+    },
+    "task4": {
+      "url": "https://github.com/miniKaras/sasavot_task4/tree/main",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task3": {
+      "url": "https://github.com/miniKaras/Sasavot_task_3",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/miniKaras/task_2/tree/main",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task5": {
+      "url": "https://github.com/miniKaras/A-star",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Коломоец Майя Михайловна",
+    "task2": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task3": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task4": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task1": {
+      "url": "https://github.com/Mokflasha/siakod1",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Лепетюха Даниил Витальевич",
+    "task3": {
+      "url": "https://github.com/9anchik/siacode-task3",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/9anchik/siacode-task1",
+      "valid": false,
+      "reason": "Пустой репозиторий"
+    },
+    "task6": {
+      "url": "https://github.com/9anchik/siacode-task6",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/9anchik/siacode-task2",
+      "valid": true,
+      "reason": null
+    },
+    "task5": {
+      "url": "https://github.com/9anchik/siacode-task5",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/9anchik/siacode-task4",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Мукнаева Виктория Павловна",
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task3": {
+      "url": "https://github.com/VikaM228/Task_3_SIAKOD",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/VikaM228/Task_2_SIAKOD",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/VikaM228/Task_1_SIAKOD",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/VikaM228/Task_4_SIAKOD",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Одинаев Илья Дмитриевич",
+    "task3": {
+      "url": "https://github.com/IlyaLYR/S-ACDP_TASK3",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/IlyaLYR/S-ACDP_TASK4",
+      "valid": true,
+      "reason": null
+    },
+    "task6": {
+      "url": "https://github.com/IlyaLYR/S-ACDP_TASK6",
+      "valid": true,
+      "reason": null
+    },
+    "task5": {
+      "url": "https://github.com/IlyaLYR/S-ACDP_TASK5",
+      "valid": true,
+      "reason": null
+    },
+    "task1": {
+      "url": "https://github.com/IlyaLYR/S-ACDP_TASK1",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/IlyaLYR/S-ACDP_TASK2",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Орлов Данила Николаевич",
+    "task3": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task4": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task1": {
+      "url": "https://github.com/willuar/SiaCode_Task_1",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/willuar/SiaCode_Task_2",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Пикалов Руслан Сергеевич",
+    "task1": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task3": {
+      "url": "https://github.com/P1kalov/task3-siakod",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/P1kalov/Task2-4-SiAKOD",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/P1kalov/Task2-4-SiAKOD",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Сутидзе Давид Гиоргиевич",
+    "task2": {
+      "url": "https://github.com/DuaTitus/task2_siakod.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task5": {
+      "url": "https://github.com/DuaTitus/task5_siakod.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task3": {
+      "url": "https://github.com/DuaTitus/task3_siakod.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task1": {
+      "url": "https://github.com/DuaTitus/task1_siakod.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task6": {
+      "url": "https://github.com/DuaTitus/task6_siakod.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task4": {
+      "url": "https://github.com/DuaTitus/task4_siakod.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    }
+  },
+  {
+    "name": "Сырцева Мария Михайловна",
+    "task4": {
+      "url": "-",
+      "valid": false,
+      "reason": "Не ссылка"
+    },
+    "task5": {
+      "url": "-",
+      "valid": false,
+      "reason": "Не ссылка"
+    },
+    "task6": {
+      "url": "-",
+      "valid": false,
+      "reason": "Не ссылка"
+    },
+    "task2": {
+      "url": "https://github.com/MariyaS228/Task2_siakod",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task1": {
+      "url": "https://github.com/MariyaS228/pythonProject2",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task3": {
+      "url": "https://github.com/MariyaS228/task3_siakod",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    }
+  },
+  {
+    "name": "Сысоева Светлана Андреевна",
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task2": {
+      "url": "https://github.com/SysoevaSvetlana/SACIPtask2.git",
+      "valid": false,
+      "reason": "Репозиторий не существует"
+    },
+    "task1": {
+      "url": "https://github.com/SysoevaSvetlana/SACIPtask1.git",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/SysoevaSvetlana/SACIPtask4.git",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/SysoevaSvetlana/SACIPtask3.git",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Филина Вероника Дмитриевна",
+    "task4": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task1": {
+      "url": "потерялась задача :(",
+      "valid": false,
+      "reason": "Не ссылка"
+    },
+    "task2": {
+      "url": "https://github.com/vn-filina/siakod_2",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/vn-filina/siakod_3",
+      "valid": true,
+      "reason": null
+    }
+  },
+  {
+    "name": "Чернышев Максим",
+    "task5": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task6": {
+      "valid": false,
+      "reason": "Ссылка отсутствует"
+    },
+    "task1": {
+      "url": "https://github.com/makzxxx/siakod1task",
+      "valid": true,
+      "reason": null
+    },
+    "task4": {
+      "url": "https://github.com/makzxxx/siakod_task4",
+      "valid": true,
+      "reason": null
+    },
+    "task3": {
+      "url": "https://github.com/makzxxx/siakod3task",
+      "valid": true,
+      "reason": null
+    },
+    "task2": {
+      "url": "https://github.com/makzxxx/siakod2task",
+      "valid": true,
+      "reason": null
+    }
+  }
+]
