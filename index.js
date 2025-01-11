@@ -1,11 +1,11 @@
 const {google} = require('googleapis');
 const fs = require('fs');
 const axios = require("axios");
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 require('dotenv').config();
 
-
+const sheetsId = process.env.SHEETS_ID
 const keyFile = process.env.GOOGLE_KEY_FILE;
-
 
 
 async function GetGoogleReps(sheetsId, range) {
@@ -23,6 +23,11 @@ async function GetGoogleReps(sheetsId, range) {
 	return repsData.data.values;
 }
 
+async function retrieveData () {
+	const data = await GetGoogleReps(sheetsId, 'Ответы на форму (1)');
+	data.splice(0, 1);
+	return data.map(x => x.slice(1));
+}
 
 function concatArrs(data) {
 	const result = [];
@@ -50,36 +55,45 @@ function concatArrs(data) {
 }
 
 async function isRepoAccessible(url) {
-	const gitToken = process.env.GITHUB_TOKEN;
 	try {
-		const repoUrl = new URL(url);
-		const repoPath = repoUrl.pathname.slice(1).replace('.git', '');
-		const apiUrl = `https://api.github.com/repos/${repoPath}`;
-
-		const response = await axios.get(apiUrl, {
-			headers: {
-			Authorization: `token ${gitToken}` 
-			}
-		});
-
-		if (response.status === 200) {
-			if (response.data.private) {
-			return { valid: false, reason: 'Репозиторий не публичный' };
-			}
-			if (response.data.size === 0) {
-			return { valid: false, reason: 'Пустой репозиторий' };
-			}
+		await axios.get(url);
 		return { valid: true };
+	} catch (e) {
+		if (e.response?.status === 404) {
+			return { valid: false, reason: 'Репозиторий не существует или приватен' };
 		}
-		} catch (error) {
-		if (error.response) {
-			const status = error.response.status;
-			if (status === 404) {
-			return { valid: false, reason: 'Репозиторий не существует' };
-			}
-		}
-		return { valid: false, reason: 'Не ссылка' };
 	}
+
+	// const gitToken = process.env.GITHUB_TOKEN;
+	// try {
+	// 	const repoUrl = new URL(url);
+	// 	const repoPath = repoUrl.pathname.slice(1).replace('.git', '');
+	// 	const apiUrl = `https://api.github.com/repos/${repoPath}`;
+
+	// 	const response = await axios.get(apiUrl, {
+	// 		headers: {
+	// 		Authorization: `token ${gitToken}` 
+	// 		}
+	// 	});
+
+	// 	if (response.status === 200) {
+	// 		if (response.data.private) {
+	// 		return { valid: false, reason: 'Репозиторий не публичный' };
+	// 		}
+	// 		if (response.data.size === 0) {
+	// 		return { valid: false, reason: 'Пустой репозиторий' };
+	// 		}
+	// 	return { valid: true };
+	// 	}
+	// 	} catch (error) {
+	// 	if (error.response) {
+	// 		const status = error.response.status;
+	// 		if (status === 404) {
+	// 		return { valid: false, reason: 'Репозиторий не существует' };
+	// 		}
+	// 	}
+	// 	return { valid: false, reason: 'Не ссылка' };
+	// }
 	return { valid: false, reason: 'Неизвестная ошибка' };
 }
 
@@ -123,20 +137,48 @@ async function convertToObjects(data, outputFileName) {
 	console.log(`Данные сохранены в ${outputFileName}`);
 }
 
-(async () => {
-	try {
-		const sheetsId = '1RVfO16aCV5TVCsbOFW-VIvXKw1nTc_7I8q5GMt_ekRg';
-		const range = 'Ответы на форму (1)!B2:H24';
-		
 
-		const data = await GetGoogleReps(sheetsId, range);
-
-		const combinedData = concatArrs(data);
-
-		convertToObjects(combinedData, "output.json");
-	} catch (error) {
-		console.error("Ошибка:", error);
+async function convertToCSV(data, outputFileName) {
+	const header = [{ id: "name", title: "Name" }];
+	for (let i = 1; i <= 6; i++) {
+		header.push({ id: `task${i}`, title: `Task ${i}` });
+		header.push({ id: `task${i}_check`, title: `Task ${i} Check` });
 	}
+
+	const csvWriter = createCsvWriter({
+		path: outputFileName,
+		header: header,
+		fieldDelimiter: ";",
+	});
+
+	const records = data.map(obj => {
+		const record = { name: obj.name };
+
+		for (let i = 1; i <= 6; i++) {
+			const task = obj[`task${i}`];
+
+			if (task) {
+				record[`task${i}`] = task.valid ? task.url || "Ссылка отсутствует" : task.reason || "Неизвестная причина";
+			}
+		}
+		return record;
+	});
+
+	await csvWriter.writeRecords(records);
+	const content = fs.readFileSync(outputFileName, "utf8");
+	fs.writeFileSync(outputFileName, "\uFEFF" + content, "utf8");
+}
+
+(async () => {
+try {
+	const data = await retrieveData();
+	const combinedData = concatArrs(data);
+	const convertObjects = convertToObjects(combinedData, 'output.json')
+	const jsonData = require("./output.json");
+	await convertToCSV(jsonData, 'out.csv');
+} catch (error) {
+	console.error("Ошибка:", error);
+}
 })();
 
 
